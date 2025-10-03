@@ -67,9 +67,9 @@ const projects: Project[] = [
     id: 4,
     title: "AI-Powered Coaching Mobile App Design",
     description: "Design of a mobile app connecting coaches and clients, where coaches can schedule sessions, record conversations, and receive AI-driven task suggestions. Clients can also add tasks, ensuring a personalized and interactive coaching experience.",
-    year: "2023",
+    year: "2025",
     role: "UX Designer",
-    techStack: "Figma, Vue.js",
+    techStack: "Figma",
     imageUrl: "/Thumbnail(1).png",
     imageAlt: "AI-Powered Coaching Mobile App Design",
     
@@ -78,19 +78,53 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Fitness Tracking App",
-    description: "Developed a comprehensive fitness tracking application with personalized workout recommendations.",
-    year: "2023",
+    title: "UNICEF Donation Website Design",
+    description: "Design of a donation platform focused on simple navigation, transparent causes, and a seamless donation process to support UNICEF initiatives.",
+    year: "2025",
     role: "UI/UX Designer",
-    techStack: "Adobe XD, React Native",
-    imageUrl: "/project.png",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(2).png",
+    imageAlt: "UNICEF Donation Website Design",
+    viewProjectUrl: "https://www.figma.com/design/C4zhik4T3Z5TlCSrrVnmZ8/tobetter8--Working-on-Progress-?node-id=7010-324&t=8Dr5pwpyz7aAL7he-1",
+  }
+  ,
+  {
+    id: 6,
+    title: "Tiles E-Commerce Website Design",
+    description: "Design of an online tiles store with easy browsing, product details, search and filter options, and a smooth checkout process.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(3).png",
+    imageAlt: "Tiles E-Commerce Website Design",
+    
+    viewProjectUrl: "https://www.figma.com/design/BPTW2gz6eocayNXLtgVKq3/Tiles-Selling-Website?node-id=7010-324&t=8Dr5pwpyz7aAL7he-1",
+  },
+  {
+    id: 7,
+    title: "Diamond Auction Website Design",
+    description: "Design of an online diamond auction platform where users can place bids in real time, track ongoing auctions, and the highest bidder wins after the set time expires.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(4).png",
     imageAlt: "Fitness tracking app",
-    liveDemoUrls: [
-      { name: "Live Demo", url: "https://example.com/project5" },
-      { name: "App Store", url: "https://appstore.com/project5" }
-    ],
-    viewProjectUrl: "https://example.com/view5",
-    caseStudyUrl: "https://example.com/case5" // Has case study
+    
+    viewProjectUrl: "https://www.figma.com/design/NJbN1apQpkO8xJnEmu6aIi/Diamond-Auction-Website-Design?node-id=5106-1281&t=8Dr5pwpyz7aAL7he-1",
+  }
+  ,
+  {
+    id: 8,
+
+    title: "Lighting Solutions Website Design",
+    description: "Design of a website providing advanced lighting solutions for large-scale innovations, focusing on product showcase, solution highlights, and a seamless inquiry process.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(5).png",
+    imageAlt: "Lighting Solutions Website Design",
+   
+    viewProjectUrl: "https://www.figma.com/design/7LYMFblzeoAupUyzMLVgZo/Lighting-Solutions-Website-Design?node-id=7010-324&t=8Dr5pwpyz7aAL7he-1",
   }
 ];
 

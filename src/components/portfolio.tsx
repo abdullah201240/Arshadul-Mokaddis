@@ -65,18 +65,15 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Travel Booking Platform",
-    description: "Designed a seamless booking experience for a travel platform with focus on usability and accessibility.",
+    title: "AI-Powered Coaching Mobile App Design",
+    description: "Design of a mobile app connecting coaches and clients, where coaches can schedule sessions, record conversations, and receive AI-driven task suggestions. Clients can also add tasks, ensuring a personalized and interactive coaching experience.",
     year: "2023",
     role: "UX Designer",
     techStack: "Figma, Vue.js",
-    imageUrl: "/project.png",
-    imageAlt: "Travel booking platform",
-    liveDemoUrls: [
-      { name: "Live Demo", url: "https://example.com/project4" },
-      { name: "Design System", url: "https://example.com/project4/design" }
-    ],
-    viewProjectUrl: "https://example.com/view4"
+    imageUrl: "/Thumbnail(1).png",
+    imageAlt: "AI-Powered Coaching Mobile App Design",
+    
+    viewProjectUrl: "https://www.figma.com/design/PftCVBP2Xit23alvVTkcgT/AI-Powered-Coaching-Mobile-App-Design?node-id=0-1&t=tJ7dkC6tfIuKhTRG-1"
     // No caseStudyUrl - button will not show
   },
   {

@@ -125,7 +125,48 @@ const projects: Project[] = [
     imageAlt: "Lighting Solutions Website Design",
    
     viewProjectUrl: "https://www.figma.com/design/7LYMFblzeoAupUyzMLVgZo/Lighting-Solutions-Website-Design?node-id=7010-324&t=8Dr5pwpyz7aAL7he-1",
+  },
+  {
+    id: 9,
+
+    title: "Shariah-Compliant Stock Market Platform Design",
+    description: "Design of a website and mobile app that enables users to track, analyze, and trade in the stock market while ensuring Shariah compliance, offering insights and tools for informed decision-making.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(6).png",
+    imageAlt: "Shariah-Compliant Stock Market Platform Design",
+   
+    viewProjectUrl: "https://www.figma.com/design/czVY10nNoxycztxOSGKdqC/Shariah-Compliant-Stock-Market-Platform-Design?node-id=5106-1281&t=tJ7dkC6tfIuKhTRG-1",
+  },
+  {
+    id: 10,
+
+    title: "Fashion Brand E-Commerce Website Design",
+    description: "Design of an online fashion store with stylish product displays, smooth navigation, and an easy checkout experience to enhance brand identity and user engagement.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(7).png",
+    imageAlt: "Fashion Brand E-Commerce Website Design",
+   
+    viewProjectUrl: "https://www.figma.com/design/W8JpNCg2qGpliQMeTDh6Wb/Fashion-Brand-E-Commerce-Website-Design?node-id=13011-113&t=8Dr5pwpyz7aAL7he-1",
+  },
+  {
+    id: 11,
+
+    title: "Fresh Fruits & Vegetables Finder Website Design",
+    description: "Design of a local marketplace app that helps users easily find and purchase fresh fruits and vegetables from nearby vendors with simple browsing and quick checkout.",
+    year: "2025",
+    role: "UI/UX Designer",
+    techStack: "Figma",
+    imageUrl: "/Thumbnail(8).png",
+    imageAlt: "Fresh Fruits & Vegetables Finder Website Design",
+   
+    viewProjectUrl: "https://www.figma.com/design/CPhA1mbakRUXEdK2f2dISx/gman54?node-id=7010-324&t=8Dr5pwpyz7aAL7he-1",
   }
+
+  
 ];
 
 // Project card component for reusability

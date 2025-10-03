@@ -1,16 +1,14 @@
 'use client'
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, Twitter, MapPin, Phone, Send } from "lucide-react";
+import { Mail, Linkedin, MapPin, Phone, Send } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: "Email", icon: Mail, href: "mailto:contact@arshadulmokaddis.com" },
-    { name: "GitHub", icon: Github, href: "https://github.com/arshadulmokaddis" },
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/arshadulmokaddis" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com/arshadulmokaddis" },
+    { name: "Email", icon: Mail, href: "mailto:ar.mokaddis260@gmail.com" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/arshadul-mokaddis" },
   ];
 
   const quickLinks = [
@@ -57,11 +55,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span className="text-sm">+880 1XXX-XXXXXX</span>
+                <span className="text-sm">+8801785389594</span>
               </div>
               <div className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span className="text-sm">contact@arshadulmokaddis.com</span>
+                <span className="text-sm">ar.mokaddis260@gmail.com</span>
               </div>
             </div>
           </div>

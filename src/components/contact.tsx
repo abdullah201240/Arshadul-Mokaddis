@@ -37,19 +37,19 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@arshadulmokaddis.com",
+      value: "ar.mokaddis260@gmail.com",
       description: "I'm always open to discussing design opportunities.",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (123) 456-7890",
-      description: "Mon-Fri from 9 AM to 5 PM EST",
+      value: "01785389594",
+      description: "Available for calls and meetings",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Dhaka, Bangladesh",
       description: "Available for remote work worldwide",
     },
   ];

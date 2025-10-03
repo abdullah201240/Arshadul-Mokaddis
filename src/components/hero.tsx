@@ -27,8 +27,8 @@ export default function Hero() {
 
                 {/* Main heading - Even larger */}
                 <h1 className='text-center mb-4 w-full'>
-                    <span className='text-black text-7xl md:text-8xl font-bold'>I&apos;m </span>
-                    <span className='text-[#BDCFE3] text-7xl md:text-8xl font-bold'>Arshadul Mokaddis</span>
+                    <span className='text-black text-6xl md:text-8xl font-bold'>I&apos;m </span>
+                    <span className='text-[#BDCFE3] text-6xl md:text-8xl font-bold'>Arshadul Mokaddis</span>
                 </h1>
 
                 {/* Large title with image - Even larger */}

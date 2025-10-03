@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 // Define the project data structure
@@ -14,19 +14,27 @@ interface Project {
   techStack: string;
   imageUrl: string;
   imageAlt: string;
+  liveDemoUrls: { name: string; url: string }[];
+  viewProjectUrl: string;
+  caseStudyUrl: string;
 }
 
 // Sample project data - easy to extend with more projects
 const projects: Project[] = [
   {
     id: 1,
-    title: "Healthcare Platform Redesign",
-    description: "Complete redesign of a healthcare platform focusing on improving patient experience and operational efficiency.",
+    title: "Delivery & Transport App Design",
+    description: "Complete design of a delivery and transport app focusing on seamless user flow, real-time tracking, and efficient product handover across hubs.",
     year: "2025",
     role: "UI/UX Designer",
     techStack: "Figma",
     imageUrl: "/project.png",
-    imageAlt: "Healthcare platform redesign"
+    imageAlt: "Healthcare platform redesign",
+    liveDemoUrls: [
+      { name: "Play Store", url: "https://play.google.com/apps/internaltest/4701591621699522196" },
+    ],
+    viewProjectUrl: "https://www.figma.com/design/m2b3MdWNOl4E05fho2a3za/Bring2Me?node-id=0-1&t=8Dr5pwpyz7aAL7he-1",
+    caseStudyUrl: "https://www.behance.net/gallery/233012629/Bring-2-Me-A-Smart-Way-to-Deliver-Earn-%28Case-Study%29"
   },
   {
     id: 2,
@@ -36,7 +44,13 @@ const projects: Project[] = [
     role: "Product Designer",
     techStack: "Figma, React",
     imageUrl: "/project.png",
-    imageAlt: "E-commerce mobile app design"
+    imageAlt: "E-commerce mobile app design",
+    liveDemoUrls: [
+      { name: "Live Demo", url: "https://example.com/project2" },
+      { name: "Figma File", url: "https://figma.com/project2" }
+    ],
+    viewProjectUrl: "https://example.com/view2",
+    caseStudyUrl: "https://example.com/case2"
   },
   {
     id: 3,
@@ -46,7 +60,13 @@ const projects: Project[] = [
     role: "UI Designer",
     techStack: "Sketch, React",
     imageUrl: "/project.png",
-    imageAlt: "Banking dashboard UI"
+    imageAlt: "Banking dashboard UI",
+    liveDemoUrls: [
+      { name: "Live Demo", url: "https://example.com/project3" },
+      { name: "GitHub", url: "https://github.com/project3" }
+    ],
+    viewProjectUrl: "https://example.com/view3",
+    caseStudyUrl: "https://example.com/case3"
   },
   {
     id: 4,
@@ -56,7 +76,13 @@ const projects: Project[] = [
     role: "UX Designer",
     techStack: "Figma, Vue.js",
     imageUrl: "/project.png",
-    imageAlt: "Travel booking platform"
+    imageAlt: "Travel booking platform",
+    liveDemoUrls: [
+      { name: "Live Demo", url: "https://example.com/project4" },
+      { name: "Design System", url: "https://example.com/project4/design" }
+    ],
+    viewProjectUrl: "https://example.com/view4",
+    caseStudyUrl: "https://example.com/case4"
   },
   {
     id: 5,
@@ -66,7 +92,13 @@ const projects: Project[] = [
     role: "UI/UX Designer",
     techStack: "Adobe XD, React Native",
     imageUrl: "/project.png",
-    imageAlt: "Fitness tracking app"
+    imageAlt: "Fitness tracking app",
+    liveDemoUrls: [
+      { name: "Live Demo", url: "https://example.com/project5" },
+      { name: "App Store", url: "https://appstore.com/project5" }
+    ],
+    viewProjectUrl: "https://example.com/view5",
+    caseStudyUrl: "https://example.com/case5"
   }
 ];
 
@@ -103,16 +135,29 @@ function ProjectCard({ project }: { project: Project }) {
 
         <div className="flex flex-wrap gap-2">
           <Button 
+            onClick={() => window.open(project.viewProjectUrl, '_blank')}
             className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-xs font-medium transition-all backdrop-blur-sm"
           >
             View project <ArrowRight className="ml-1 h-3 w-3" />
           </Button>
           <Button 
+            onClick={() => window.open(project.caseStudyUrl, '_blank')}
             variant="outline" 
             className="border-2 border-white/30 text-white px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-white/20 backdrop-blur-sm"
           >
             Read Case Study
           </Button>
+          
+          {/* Dynamic Live Demo Buttons */}
+          {project.liveDemoUrls.map((demo, index) => (
+            <Button 
+              key={index}
+              onClick={() => window.open(demo.url, '_blank')}
+              className="bg-white text-[#551EBA] hover:bg-white/90 px-4 py-2 rounded-full text-xs font-medium transition-all flex items-center"
+            >
+              {demo.name} <ExternalLink className="ml-1 h-3 w-3" />
+            </Button>
+          ))}
         </div>
       </div>
 
